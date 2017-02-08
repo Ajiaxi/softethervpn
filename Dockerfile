@@ -8,4 +8,5 @@ COPY entrypoint.sh /vpnserver/
 WORKDIR /vpnserver
 RUN make i_read_and_agree_the_license_agreement
 RUN rm -rf /vpnserver-v4.22-x64-64bit.tar.gz
+RUN chmod 777 /vpnserver/entrypoint.sh
 ENTRYPOINT /vpnserver/entrypoint.sh 

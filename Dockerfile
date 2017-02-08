@@ -7,3 +7,4 @@ RUN tar xzvf vpnserver-v4.22-x64-64bit.tar.gz
 RUN rm -rf vpnserver-v4.22-x64-64bit.tar.gz
 RUN cd vpnserver
 RUN make i_read_and_agree_the_license_agreement
+ENTRYPOINT entrypoint.sh 
